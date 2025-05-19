@@ -2,7 +2,7 @@
 import './App.css'
 import Users from './Component/Users'
 
-const userPromise = fetch('http://localhost:3000/users')
+const userPromise = fetch('https://test-backend-app-fjlv.onrender.com/users')
 .then(res => res.json());
 
 function App() {

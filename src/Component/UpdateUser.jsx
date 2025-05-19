@@ -14,7 +14,7 @@ const UpdateUser = () => {
         console.log(updateuser);
         // update user info in the db
 
-    fetch(`http://localhost:3000/users/${user._id}`,{
+    fetch(`https://test-backend-app-fjlv.onrender.com/users/${user._id}`,{
         method: 'PUT',
         headers: {
             'content-type' : 'application/json'

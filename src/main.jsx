@@ -19,11 +19,11 @@ const router = createBrowserRouter([
     children:[
     {index: true ,Component: App},
     { path:'users/:id',
-      loader: ({params}) => fetch(`http://localhost:3000/users/${params.id}`),
+      loader: ({params}) => fetch(`https://test-backend-app-fjlv.onrender.com/users/${params.id}`),
       Component: UserDetails},
       
       {path:'/update/:id',
-      loader: ({params}) => fetch(`http://localhost:3000/users/${params.id}`)
+      loader: ({params}) => fetch(`https://test-backend-app-fjlv.onrender.com/users/${params.id}`)
         ,
       Component: UpdateUser
       }

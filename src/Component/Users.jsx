@@ -15,7 +15,7 @@ const handleAddUser = e =>{
 
 //    create user in the db
  
-fetch('http://localhost:3000/users' , {
+fetch('https://test-backend-app-fjlv.onrender.com/users' , {
     method: 'POST',
     headers: {
         'content-type':'application/json'
@@ -41,7 +41,7 @@ fetch('http://localhost:3000/users' , {
 const handleDelete = (_id) => {
 console.log('Delete this user', _id)
 
-fetch(`http://localhost:3000/users/${_id}`,
+fetch(`https://test-backend-app-fjlv.onrender.com/${_id}`,
 {method: "DELETE"}
 )
 .then(res => res.json())
